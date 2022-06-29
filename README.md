@@ -100,8 +100,7 @@ outputs
 
 #### Install via helm
 
-    chart=jenkinsci/jenkins
-    helm install jenkins -n jenkins $chart
+    helm install jenkins -n jenkins jenkinsci/jenkins
 
     # Get your 'admin' user password by running
     kubectl exec --namespace jenkins -it svc/jenkins -c jenkins -- /bin/cat /run/secrets/additional/chart-admin-password && echo
@@ -110,7 +109,7 @@ outputs
     # expose service to 8080
     kubectl --namespace jenkins port-forward svc/jenkins 8080:8080
 
-    
+
 
 
 

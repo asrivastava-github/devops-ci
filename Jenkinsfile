@@ -9,24 +9,25 @@ node {
 
     stage('Build image') {
   
-       app = docker.build("asrivastav11/test")
-        // sh "docker build ."
+    //    app = docker.build("asrivastav11/test")
+        sh "docker build . -t test"
     }
 
     stage('Test image') {
   
 
-        app.inside {
+        // app.inside {
+        //     sh 'echo "Tests passed"'
+        // }
             sh 'echo "Tests passed"'
-        }
     }
 
     stage('Push image') {
         
-        docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
-            app.push("${env.BUILD_NUMBER}")
-        }
-        // sh "docker image push registry.hub.docker.com:443/asrivastav11/test:latest"
+        // docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
+        //     app.push("${env.BUILD_NUMBER}")
+        // }
+        sh "docker image push registry.hub.docker.com:443/asrivastav11/test:latest"
     }
     
     stage('Trigger ManifestUpdate') {

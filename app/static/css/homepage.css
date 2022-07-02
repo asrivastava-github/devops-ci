@@ -1,0 +1,89 @@
+body{
+    height: 100%;
+    margin: 0;
+    
+    background-image: linear-gradient(to right, #5680E9 ,#84CEEB,#5AB9EA,#C1C8E4,#8860D0);
+    font-family: Montserrat;    
+    color: #050505;
+}
+
+#bg{
+    clip-path:circle(80% at 21% 3%);
+    background: white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif; 
+    color: #3f3c3c;
+    font-size: 18px;
+}
+
+.page-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.shape{
+    padding: 3%;
+    height: auto;
+    width: 90%;
+    box-shadow: 0 0 20px #050505;
+}
+
+.spacesize{
+    width: 230px;
+    height: 90%;
+}
+    /* Rectangle 2 */
+
+.rectangle{
+    padding: 0%;
+    text-align: center;
+    font-size: 100%;
+    color: white;
+    margin: 2%;
+    width: 28%;
+    height: auto;
+    background-image: linear-gradient(to right, #F894A4 ,#F9D1B7);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
+    float:left;
+    border-radius: 25px;
+    font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif; 
+}
+
+.footer{
+    text-align: center;
+    font-size: 15px;
+    color:white;
+    bottom: 0%;
+    font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif; 
+    
+}
+
+#header{
+width: 100%;
+height: 50px;
+font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif; 
+font-size: 25px;
+color: white;
+font-weight: bold;
+
+
+}
+
+#header .sign{
+    margin-right: 5%;
+    float: right;
+    
+}
+
+.img{
+    width: 40%;
+    height: auto;
+    
+}

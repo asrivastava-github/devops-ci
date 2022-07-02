@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <title>knowAtoV</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/homepage.css') }}">
+    <link href="/blogs/static/css/homepage.css" rel="stylesheet" type="text/css" media="all" />
+    
+</head>
+<body>
+        <div id="header">
+            <img src="{{url_for('static', filename='images/home.png')}}"/> Home &nbsp;&nbsp;  About Us &nbsp;&nbsp;  Services &nbsp;&nbsp;  Contact Us <span class="sign">Sign In </span> 
+                
+            </div>
+    <div id="bg">
+        <h4>A little to know about me</h4>
+        <p>A learner who is keen to be up to date in a hard way.</p>
+    
+    </div>
+    
+    <div class="page-container">
+            <div class="shape">
+                <a href="blogs"><div class="rectangle">
+                    <p>DevOps <br><img class="img" src="{{url_for('static', filename='images/Techs.png')}}"/></p>
+                    
+                </div></a>
+                <!--<div spacesize ></div>-->
+                <a href="cloudsolutions"><div class="rectangle">
+                    <p>Cloud Solutions <br><img class="img" src="{{url_for('static', filename='images/cloudsolutions.png')}}"/></p>
+                  
+                </div></a>
+                <!--<div spacesize ></div>-->
+                <div class="rectangle">
+                    <p>Tech blogs<br><img class="img" src="{{url_for('static', filename='images/blogs.png')}}"/></p>
+                </div>
+            </div>
+
+            
+    </div>
+    
+    <div class="footer">
+            knowAtoV solutions<br> copyright reserved
+        </div>
+    <!-- <script type="text/javascript" src="static/js/bootstrap.js" charset="utf-8"></script> -->
+</body>
+</html>

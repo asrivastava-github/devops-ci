@@ -110,6 +110,16 @@ outputs
     kubectl --namespace jenkins port-forward svc/jenkins 8080:8080
 
 
+#### Docker image
+
+    cd app
+    docker build . -t <docker-hub-username>/flaskdemo:1.0.0
+    docker login
+    docker push asrivastav11/flaskdemo:1.0.0
+    docker run -d -p <service-ip>:<service-port>:<container-port> <container-name>
+
+
+
 
 
 

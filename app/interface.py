@@ -7,7 +7,7 @@ blog.secret_key = 'super secret key'
 blog.debug = False
 
 
-@blog.route('/home')
+@blog.route('/')
 def homepage():
     return render_template("home.html")
 

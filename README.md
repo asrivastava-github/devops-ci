@@ -114,6 +114,7 @@ outputs
 
     cd app
     docker build . -t <docker-hub-username>/flaskdemo:1.0.0
+    docker build . -t asrivastav11/flaskdemo:1.0.0
     docker login
     docker push asrivastav11/flaskdemo:1.0.0
     docker run -d -p <service-ip>:<service-port>:<container-port> <container-name>

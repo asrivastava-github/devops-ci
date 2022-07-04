@@ -10,7 +10,7 @@ node {
   
     //    app = docker.build("asrivastav11/test")
         sh "ls -ltra"
-        sh "cd app && docker build . -t asrivastav11/flaskdemo:1.0.2"
+        sh "cd app && sudo docker build . -t asrivastav11/flaskdemo:1.0.2"
     }
 
     stage('Test image') {
@@ -27,7 +27,7 @@ node {
         // docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
         //     app.push("${env.BUILD_NUMBER}")
         // }
-        sh 'docker image push docker push asrivastav11/flaskdemo:1.0.2'
+        sh 'sudo docker image push docker push asrivastav11/flaskdemo:1.0.2'
     }
     
     // stage('Trigger ManifestUpdate') {

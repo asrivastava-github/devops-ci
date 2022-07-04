@@ -9,7 +9,7 @@ node {
     stage('Build image') {
 
         dir('app') {
-            ls -ltra
+            sh "ls -ltra"
             app = docker.build('"asrivastav11/flaskdemo:1.0.2"')
             // sh "ls -ltra"
             // sh "cd app && sudo docker build . -t asrivastav11/flaskdemo:1.0.2"

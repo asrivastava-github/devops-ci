@@ -7,14 +7,15 @@ node {
     }
 
     stage('Build image') {
-  
-    //    app = docker.build("asrivastav11/test")
-        sh "docker build . -t asrivastav11/flaskdemo:1.0.2"
+        dir (app){
+            //    app = docker.build("asrivastav11/test")
+            sh "docker build . -t asrivastav11/flaskdemo:1.0.2"
     }
+
+        }
 
     stage('Test image') {
   
-
         // app.inside {
         //     sh 'echo "Tests passed"'
         // }
